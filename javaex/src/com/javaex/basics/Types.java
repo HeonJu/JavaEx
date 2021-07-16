@@ -5,8 +5,9 @@ package com.javaex.basics;
 public class Types {
 	public static void main(String[] args) {
 	//	varEx();
-//		integerEx();
-		flatDoubleEx();
+    //  integerEx();
+    //  flatDoubleEx();
+		booleanEx();
 
     }
 	
@@ -28,6 +29,7 @@ public class Types {
 	
 	System.out.println(result);
 	}
+	
 	
 	//실수형 데이터 타입
 	private static void flatDoubleEx() {
