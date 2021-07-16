@@ -7,9 +7,28 @@ public class Types {
 	//	varEx();
     //  integerEx();
     //  flatDoubleEx();
-		booleanEx();
+	//	booleanEx();
+		charEx();
 
     }
+	
+	
+	//문자형 데이터 타입
+	private static void charEx() {
+		//부호가 없는 정수 코드
+		char ch1 = 'A';
+		char ch2 = '한';
+		
+		System.out.println(ch1);
+		System.out.println(ch2);
+		
+		System.out.println(ch1 + ch2); // 정수 + 정수가 된다 ????
+		
+		String str = "A한";
+		System.out.println(str);
+		
+	}
+	
 	
 	//논리형 데이터 타입
 	private static void booleanEx() {
