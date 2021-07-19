@@ -2,15 +2,15 @@ package com.javaex.basics;
 
 public class OperatorEx {
 	public static void main(String[] args) {
-	 //arithOperEx();
-	 //logicOperEx();
-	 //bitOperEx();
-	 //bitshiftOperEx();
-	   conditionalOperEx();
+	 arithOperEx();
+	 logicOperEx();
+	 bitOperEx();
+	 bitshiftOperEx();
+	 conditionalOperEx();
 	}
 	
 	
-	//3항 연산자
+	// 3항 연산자
 	private static void conditionalOperEx() {
 		// 문법: 조건식 ? 참일 때의 값 또는 식: 거짓일 때의 값 또는 식:
 		int a = 10;
@@ -34,7 +34,7 @@ public class OperatorEx {
 	
 	
 	
-	//비트 시프트 연산자
+	// 비트 시프트 연산자
 	private static void bitshiftOperEx() {
 	// 비트 단위로 이동
 		int val = 1;
@@ -51,10 +51,10 @@ public class OperatorEx {
 		System.out.println(Integer.toBinaryString(val >>>2)); 
 	}
 	
-	//비트 연산자
+	 // 비트 연산자
 	private static void bitOperEx() {
-    //하드웨어 제어 , 이미지 처리등
-		// 미세하게 비트 단위데이터 제어에 활용
+     // 하드웨어 제어 , 이미지 처리등
+     // 미세하게 비트 단위데이터 제어에 활용
 		byte b1 = 0b1101;
 		byte b2 = 0b0111;
 		System.out.println("b1:" + Integer.toBinaryString(b1));
@@ -73,7 +73,7 @@ public class OperatorEx {
 		System.out.println("b1 ^ b2 : " +Integer.toBinaryString(result));
 	}
 	
-	//비교 연산과 논리 연산
+	// 비교 연산과 논리 연산
 	private static void logicOperEx() {
 		int a = 7, b = 3;
 		
@@ -114,7 +114,7 @@ public class OperatorEx {
 	}
 	
 	
-	//산술 연산
+	// 산술 연산
 	private static void arithOperEx() {
 		int a = 7, b = 3;
 		
