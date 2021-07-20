@@ -11,8 +11,8 @@ public class ConditionalEx {
 		//switchEx();
 		//switchEx2();
 		//coditionalPractice01();
-		coditionalPractice02();
-		
+		//coditionalPractice02();
+		switchEx3("TUSEDAY");
 	}
 
 	private static void switchEx3(String day) {
@@ -22,12 +22,13 @@ public class ConditionalEx {
 		//      SATURDAY -> 주말
 		//  그 이외 -> ?
 		// T000: 이 코드는 나중에 enum 타비응로 개선해 볼 예정
+		
 		String act;
 		
 		switch(day) {
 		case "SUNDAY":
-		act = "휴식";
-		break;
+		   act = "휴식";
+		   break;
 		case "MONDAY":
 		case "TUSEDAY":
 		case "WEDSEDAY":
@@ -40,18 +41,10 @@ public class ConditionalEx {
 		case "SATURDAY":
 		    act = "주말";
 		    break;
-		
-			
-			
-			System.out.print(day + "에는 " + act);
-			
-		
-		
-
+		    default : act = "?";
+		}
+			System.out.println(day + "에는 " + act);
 	}
-		
-	}
-	
 	
 	
 	private static void coditionalPractice01() {
@@ -73,9 +66,13 @@ public class ConditionalEx {
 	
 	private static void coditionalPractice02() {
 		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("점수를 입력하세요");
+		
+		int score = scanner.nextInt();
 		String grade;
 		
-		if(score >= 90) 
+		 if(score >= 90) 
 			grade = "A등급";
 	else if(score >= 80) 
 			grade = "B등급";
@@ -89,7 +86,7 @@ public class ConditionalEx {
 		System.out.print(grade);
 		scanner.close();
 	}
-	}
+
 		
 		
 		
