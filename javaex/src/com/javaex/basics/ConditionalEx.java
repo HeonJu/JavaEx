@@ -10,22 +10,62 @@ public class ConditionalEx {
 		//ifElsePractice();
 		//switchEx();
 		//switchEx2();
-		coditionalPractice01();
-		//coditionalPractice02();
+		//coditionalPractice01();
+		coditionalPractice02();
 		
 	}
 
+	private static void switchEx3(String day) {
+		// day가 SUNDAY -> 휴식
+		//      MUNDAY ~ THURSDAY -> 열공
+		//      FRIDAY -> 열공 후 불금
+		//      SATURDAY -> 주말
+		//  그 이외 -> ?
+		// T000: 이 코드는 나중에 enum 타비응로 개선해 볼 예정
+		String act;
+		
+		switch(day) {
+		case "SUNDAY":
+		act = "휴식";
+		break;
+		case "MONDAY":
+		case "TUSEDAY":
+		case "WEDSEDAY":
+		case "TURSEDAY":
+			act = "열공";
+			break;
+		case "FRIDAY":
+			act = "열공 후 불금";
+			break;
+		case "SATURDAY":
+		    act = "주말";
+		    break;
+		
+			
+			
+			System.out.print(day + "에는 " + act);
+			
+		
+		
+
+	}
+		
+	}
 	
 	
 	
 	private static void coditionalPractice01() {
 		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("점수를 입력하세요");
 		
+		int score = scanner.nextInt();
 		
-		
-		
-		
-		
+		if(score % 3 == 0)
+			System.out.print("3의 배수입니다.");
+		else
+			System.out.print("3의 배수가 아닙니다.");
+		scanner.close();
 	}
 	
 	
@@ -33,11 +73,44 @@ public class ConditionalEx {
 	
 	private static void coditionalPractice02() {
 		
+		String grade;
 		
+		if(score >= 90) 
+			grade = "A등급";
+	else if(score >= 80) 
+			grade = "B등급";
+	else if(score >= 70)
+		    grade = "C등급";
+	else if(score >= 60)
+		    grade = "D등급";
+		    else
+		    grade = "f등급";
 		
-		
+		System.out.print(grade);
+		scanner.close();
 	}
-	
+	}
+		
+		
+		
+		/* 내가한거{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("점수를 입력하세요: ");
+		
+		int score = scanner.nextInt();
+		
+		if(score > 90) { System.out.println("A둥급");
+		}
+		else if( score >80) { System.out.println("B둥급");
+		}
+		else if( score >70) { System.out.println("C둥급");
+		}
+		else if( score >60) { System.out.println("D둥급");
+		}
+		else  {System.out.println("F등급");}
+		scanner.close();
+	}
+	*/
 	
 	
 	
@@ -52,7 +125,7 @@ public class ConditionalEx {
 		int month = scanner.nextInt();
 		int days = 0; // 일수 저장 변수
 		
-		switch(month) {
+		switch (month) {
 		case 2:     //month ==2
 			days = 28;
 			break;
@@ -74,13 +147,14 @@ public class ConditionalEx {
 			
 		default:
 			days = 0;
+		}
 			System.out.println(days + "일입니다.");
 			scanner.close();
 			
 		}
 		
 		
-	}
+	
 	
 	
 	
@@ -92,7 +166,7 @@ public class ConditionalEx {
 	
 	
 	private static void switchEx() {
-	
+	// ifElsePractice의 switch 버전
 	Scanner scanner = new Scanner(System.in); 
 	System.out.println("과목을 선택하세요");
 	System.out.println("(1. 자바, 2. C, 3. C++, 4. 파이썬)");
@@ -114,7 +188,7 @@ public class ConditionalEx {
 	case 4: // code == 4
 		   message = "R404";
 		   break;
-default:  // else문 역할
+    default:  // else문 역할
 	       message = "상담원에 문의하세요.";
 	}
 			System.out.print(message);
