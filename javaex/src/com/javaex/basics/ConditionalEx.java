@@ -12,7 +12,7 @@ public class ConditionalEx {
 		//switchEx2();
 		//coditionalPractice01();
 		//coditionalPractice02();
-		switchEx3("TUSEDAY");
+		switchEx3("SUNDAY");
 	}
 
 	private static void switchEx3(String day) {
