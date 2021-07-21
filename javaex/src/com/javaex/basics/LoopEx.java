@@ -8,12 +8,169 @@ public class LoopEx {
 		
 		//whileEx();
 		//whileGugu();
-		dowhileEx();
-		System.out.println("End of Code");
-	
-		
+		//dowhileEx();
+		//forGugu();
+		//continueEx();
+		//qwer();
+		//qwert();
+		//whileGuguPractice();
+	    //forGuguPractice();
+		//whilestar();
+	    //forstar();
+		breakEx();
+		//System.out.println("End of Code");		
 	}
 
+	
+	
+	
+	private static void breakEx() {
+		int num = 1;
+		
+		while(true) { //무한 루프
+		  if (num % 6 == 0 && num % 14 == 0)
+			  break; // 루프 탈출
+		  num++;
+		}
+		System.out.println(num);
+	}
+	
+	
+	
+	private static void forstar() {
+		//행 루프
+		for(int row =1; row <= 6; row++) {
+			for(int col = 1; col <= row; col++) {
+			System.out.print("*");
+		}
+			System.out.println();
+		}
+	}
+	
+	
+	private static void whilestar() {
+		int row = 1;
+		// 행 루프 
+		while(row <= 6) {
+			// 열 루프
+		int col = 1;
+		while(col <= row)
+			
+			System.out.println("*");
+		  col++;
+		}
+		System.out.println();
+		  row++;
+	  }
+		
+		
+	
+	
+	
+	
+	private static void forGuguPractice() {
+		// 단루프
+		for (int dan = 2; dan <= 9; dan++) {
+			// 숫자 루프
+			for (int num = 1; num <=9; num++) {
+				System.out.println(dan + "*" + num + "=" + (dan * num));
+			}
+		}	
+	}
+	
+	
+	
+	
+	private static void whileGuguPractice() {
+		int dan = 2;
+		//단루프
+		while(dan <=9) {
+	
+			int num =1;
+			//숫자 루프
+			while(num <=9) {
+				System.out.println(dan + "*" + num + "=" + (dan + num));
+				num++;
+			}
+			dan++;	
+		}
+	}
+	
+	
+	
+	
+	
+	
+	private static void qwer() {
+	
+		for(int q = 1; q <=9; q++)  {
+			  System.out.println();
+			  
+			  for(int w = 2; w <= 9; w++) {     
+				  System.out.print(w + "*" +q + "=" + (w * q) + "\t");
+				      }
+			 }
+	}
+		/*
+	for(int w = 2; w <= 3; w++) {
+		
+		for(int q = 1; q <=9; q++) {
+			
+			System.out.print(w + "*" +q + "=" + (w * q) );
+
+		}
+	}
+		}
+		
+	*/
+	
+	private static void qwert() {
+		for(int i =1; i <= 6; i++) {
+			for(int j = 1; j <= i; j++) {
+			System.out.print("*");
+		}
+			System.out.println();
+		}
+		
+	}
+	
+	
+	
+	
+	
+	private static void continueEx() {
+		
+		for(int i = 1; i <= 20; i++) {
+			// 2의 배수, 3의 배수는 출력하지 않음
+			if(i % 2 == 0 || i % 3 == 0)
+				continue;
+			System.out.println(i);
+		}
+	}
+	
+	
+	
+	
+	
+	private static void forGugu() {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("단을 입력하세요");
+    int dan = scanner.nextInt();
+    
+    for(int i =0; // 초기화
+    		i < 9; // 반복조건
+    		i++) { // 증감식
+    	System.out.println(dan + "*" + i + "=" + (dan * i));
+    	
+    }
+    	scanner.close();
+		
+		
+		
+	}
+	
+	
 	
 	private static void dowhileEx() {
 		
@@ -30,11 +187,8 @@ public class LoopEx {
 		total += value; // total = total + value
 	} while(value != 0);
 	
-	System.out.println("합계");
-	scanner.close();
-	
-		
-		
+	System.out.println("합계:" + total);
+	scanner.close();	
 	}
 	
 	
@@ -49,7 +203,7 @@ public class LoopEx {
 		dan = scanner.nextInt();
 				
 	    while(i <= 9) {
-	    	System.out.println("dan * i" + "=" + (dan * i));
+	    	System.out.println(dan + "*" + i + "=" + (dan * i));
 	    	// 중요 : 제어 변수 변경
 	    	i++;
 	    	
