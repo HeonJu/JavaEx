@@ -32,7 +32,7 @@ public class StringEx {
 	    //현재 이장ㄹ은 ___%d입니다
 	    fmt = "현재 이자율은 %f%% 입니다.%n"; 
 	    System.out.printf(fmt, rate); 
-	    fmt = "현재 이자율은 %.2f%% 입니다.%n"; 
+	    fmt = "현재 이자율은 %.2f%% 입니다.%n"; //소수 두째자리까지
 	    System.out.printf(fmt, rate); 
 	    
 	    
